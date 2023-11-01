@@ -26,5 +26,26 @@ def cookies(k, A):
         iterations = -1
     return iterations
 
-cookies(9, [2,7,3,6,4,6])
+
+def texteditor(Q: int, Operations):
+    S = ''
+    for Ops in Operations:
+        command_array = Ops.split()
+        if command_array[0] == '1':
+            S = S + command_array[1]
+        elif command_array[0] == '2':
+            prefix_count = len(S) - int(command_array[1])
+            prefix = ''
+            for count, x in enumerate(S):
+                if count < prefix_count:
+                    prefix += x
+                else:
+                    break
+            S = prefix
+        elif command_array[0] == '3':
+            print(list(S)[int(command_array[1])])
+        elif command_array[0] == '4':
+            continue
+
+
 
