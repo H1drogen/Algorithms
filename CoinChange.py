@@ -2,8 +2,8 @@ import sys
 
 
 def coinchange(coins, amount):
-    lowest_count = sys.maxsize
 
+    lowest_count = sys.maxsize
     sorted(coins, reverse = True)
     for coin in coins:
         #this is to check for any multiples that exist which will be more efficient (e.g. [5,3] with target of 6)
@@ -28,7 +28,7 @@ def coinchange(coins, amount):
             biggest_denomination = coins[x]
     if count < lowest_count and remainder == 0:
         lowest_count = count
-        
+
     if lowest_count != sys.maxsize:
         return lowest_count
     else:
