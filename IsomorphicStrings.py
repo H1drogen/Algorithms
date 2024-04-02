@@ -8,6 +8,8 @@ def isIsomorphic(s: string, t: string):
     map = {}
     for index, char in enumerate(s):
         if char not in map:
+            if t[index] in map.values():
+                return False
             map[char] = t[index]
         elif map[char] == t[index]:
             continue
@@ -16,4 +18,5 @@ def isIsomorphic(s: string, t: string):
     return True
 
 isIsomorphic('badc', 'baba')
+isIsomorphic('egg', 'add')
 
