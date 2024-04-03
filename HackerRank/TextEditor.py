@@ -5,18 +5,23 @@ from io import StringIO
 def textEditor(sampleinput):
     sys.stdin = StringIO(sampleinput)
 
+    cache = []
     S = ''
     for i in range(int(input())):
-        operation = input().split()
-        if operation[0] == '1':
-            S += operation[1]
-        elif operation[0] == '2':
-            final_index = len(S) - int(operation[1])
+        cache.append(S)
+        operator = input().split()
+        if operator[0] == '1':
+            S += operator[1]
+        elif operator[0] == '2':
+            final_index = len(S) - int(operator[1])
             S = S[0:final_index]
-        elif operation[0] == '3':
-            print(S[int(operation[1]) - 1])
-        elif operation[0] == '4':
-            continue
+        elif operator[0] == '3':
+            print(S[int(operator[1]) - 1])
+        elif operator[0] == '4':
+            while cache[-1] == cache[-2]:
+                cache.pop()
+            cache.pop()
+            S = cache[-1]
 
 
 
