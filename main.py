@@ -1,4 +1,6 @@
-import PalindromeNumber
 
-solution = PalindromeNumber.Solution()
-print(solution.isPalindrome(222))
+def main():
+    print("Hello, World!")
+
+if __name__ == "__main__":
+    main()
