@@ -97,4 +97,67 @@ function countCats() {
         }
     }
 }
-countCats()
+
+kitchen =   {
+    hasFridge: true,
+        favouriteAppliance: 'KeTtlE',
+    food: 'eGgS',
+    shelvesInCupboards: 3,
+    shelvesNotInCupboards: 2,
+    petName: 'RhuBarB',
+    hoover: 'DysOn'
+};
+
+function sortTheKitchen(kitchen) {
+    for (let item in kitchen) {
+        if (typeof kitchen[item] === 'string') {
+            kitchen[item] = kitchen[item].toLowerCase()
+        }
+    }
+    delete kitchen.hoover
+
+    if (kitchen.shelvesInCupboards || kitchen.shelvesNotInCupboards) {
+        kitchen['totalShelves'] = 0
+        if (kitchen.shelvesNotInCupboards) {
+            kitchen['totalShelves'] += kitchen.shelvesNotInCupboards
+        }
+        if (kitchen.shelvesInCupboards) {
+            kitchen['totalShelves'] += kitchen.shelvesInCupboards
+        }
+        delete kitchen.shelvesInCupboards
+        delete kitchen.shelvesNotInCupboards
+    }
+    // Don't change the code below this line
+    return kitchen;
+}
+
+function checkIfHealthyColony(colony, hasAntidote) {
+    for (let i = 0; i < colony.length; i++) {
+        if (colony[i].type === 'zombie' && hasAntidote === false) {
+            return false
+        }
+    }
+    return true
+}
+
+// sortTheKitchen(kitchen)
+const exampleColony = [
+    {
+        name: "anthony",
+        type: "worker"
+    },
+    {
+        name: "dec",
+        type: "worker"
+    },
+    {
+        name: "marie-antoinette",
+        type: "queen"
+    },
+    {
+        name: "adam",
+        type: "zombie"
+    }
+];
+
+console.log(checkIfHealthyColony(exampleColony, false))
