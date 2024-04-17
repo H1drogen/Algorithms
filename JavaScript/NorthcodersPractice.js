@@ -34,7 +34,7 @@ function isThisAPalindrome(str) {
     return true
 }
 // don't forget the -1 in the second index
-// don't forget let in your for loop
+// don't forget 'let' in your for loop
 
 
 isThisAPalindrome('racecar')
