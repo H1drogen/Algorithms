@@ -10,9 +10,10 @@ class Solution(object):
         :type n: int
         :rtype: None Do not return anything, modify nums1 in-place instead.
         """
-        p1 = int(m)
+        p2 = m
         for number in nums2:
-            while nums1[m - p1] < number:
-                p1 = p1 - 1
-            nums1.insert(m - p1, number)
+            nums1[p2] = number
+            p2 += 1
+        sorted(nums1)
+
 
