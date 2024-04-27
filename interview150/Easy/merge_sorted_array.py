@@ -14,6 +14,6 @@ class Solution(object):
         for number in nums2:
             nums1[p2] = number
             p2 += 1
-        sorted(nums1)
+        nums1.sort()
 
 
