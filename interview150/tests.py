@@ -1,6 +1,8 @@
 import unittest
 from interview150.Easy.merge_sorted_array import Solution as MergeSolution
+from interview150.Easy.remove_duplicates_from_sorted_array import removeDuplicates
 from interview150.Easy.remove_element import Solution as RemoveElementSolution
+
 
 class TestSolutions(unittest.TestCase):
     def setUp(self):
@@ -19,8 +21,15 @@ class TestSolutions(unittest.TestCase):
         self.assertEqual(self.remove_element_solution.removeElement([3, 2, 2, 3], 3), 2)
         self.assertEqual(self.remove_element_solution.removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2), 3)
 
+    def test_removeDuplicates(self):
+        nums = [1, 1, 2]
+        removeDuplicates(nums)
+        self.assertEqual(nums, [1, 2])
+
+        nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
+        removeDuplicates(nums)
+        self.assertEqual(nums, [0, 1, 2, 3, 4])
+
 
 if __name__ == '__main__':
     unittest.main()
-
-
