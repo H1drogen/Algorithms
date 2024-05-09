@@ -1,7 +1,7 @@
 import unittest
-from interview150.Easy.merge_sorted_array import Solution as MergeSolution
-from interview150.Easy.remove_duplicates_from_sorted_array import removeDuplicates
-from interview150.Easy.remove_element import Solution as RemoveElementSolution
+from interview150.easy.merge_sorted_array import Solution as MergeSolution
+from interview150.easy.remove_duplicates_from_sorted_array import removeDuplicates
+from interview150.easy.remove_element import Solution as RemoveElementSolution
 
 
 class TestSolutions(unittest.TestCase):
