@@ -1,0 +1,15 @@
+/Users/simonh/Documents/GitHub/Algorithms/LeetcodeC#/Program/Program/bin/Debug/net8.0/Program
+/Users/simonh/Documents/GitHub/Algorithms/LeetcodeC#/Program/Program/bin/Debug/net8.0/Program.deps.json
+/Users/simonh/Documents/GitHub/Algorithms/LeetcodeC#/Program/Program/bin/Debug/net8.0/Program.runtimeconfig.json
+/Users/simonh/Documents/GitHub/Algorithms/LeetcodeC#/Program/Program/bin/Debug/net8.0/Program.dll
+/Users/simonh/Documents/GitHub/Algorithms/LeetcodeC#/Program/Program/bin/Debug/net8.0/Program.pdb
+/Users/simonh/Documents/GitHub/Algorithms/LeetcodeC#/Program/Program/obj/Debug/net8.0/Program.GeneratedMSBuildEditorConfig.editorconfig
+/Users/simonh/Documents/GitHub/Algorithms/LeetcodeC#/Program/Program/obj/Debug/net8.0/Program.AssemblyInfoInputs.cache
+/Users/simonh/Documents/GitHub/Algorithms/LeetcodeC#/Program/Program/obj/Debug/net8.0/Program.AssemblyInfo.cs
+/Users/simonh/Documents/GitHub/Algorithms/LeetcodeC#/Program/Program/obj/Debug/net8.0/Program.csproj.CoreCompileInputs.cache
+/Users/simonh/Documents/GitHub/Algorithms/LeetcodeC#/Program/Program/obj/Debug/net8.0/Program.sourcelink.json
+/Users/simonh/Documents/GitHub/Algorithms/LeetcodeC#/Program/Program/obj/Debug/net8.0/Program.dll
+/Users/simonh/Documents/GitHub/Algorithms/LeetcodeC#/Program/Program/obj/Debug/net8.0/refint/Program.dll
+/Users/simonh/Documents/GitHub/Algorithms/LeetcodeC#/Program/Program/obj/Debug/net8.0/Program.pdb
+/Users/simonh/Documents/GitHub/Algorithms/LeetcodeC#/Program/Program/obj/Debug/net8.0/Program.genruntimeconfig.cache
+/Users/simonh/Documents/GitHub/Algorithms/LeetcodeC#/Program/Program/obj/Debug/net8.0/ref/Program.dll
