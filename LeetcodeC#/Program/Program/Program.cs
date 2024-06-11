@@ -11,5 +11,5 @@ Console.WriteLine("Hello, World!");
 //
 // rotateArray.Rotate([-1,-100,3,99],2);
 
-Reverse a = new Reverse();
-a.ReverseInteger(-2147483648);
+ValidPalindrome p = new ValidPalindrome();
+Console.WriteLine(p.IsPalindrome("A man, a plan, a canal: Panama"));
