@@ -10,3 +10,6 @@ Console.WriteLine("Hello, World!");
 // rotateArray.Rotate(nums, k);
 //
 // rotateArray.Rotate([-1,-100,3,99],2);
+
+Reverse a = new Reverse();
+a.ReverseInteger(-2147483648);
