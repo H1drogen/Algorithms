@@ -11,5 +11,14 @@ Console.WriteLine("Hello, World!");
 //
 // rotateArray.Rotate([-1,-100,3,99],2);
 
-ValidPalindrome p = new ValidPalindrome();
-Console.WriteLine(p.IsPalindrome("A man, a plan, a canal: Panama"));
+// ValidPalindrome p = new ValidPalindrome();
+// Console.WriteLine(p.IsPalindrome("A man, a plan, a canal: Panama"));
+
+ListNode head = new ListNode(1);
+head.next = new ListNode(2);
+head.next.next = new ListNode(3);
+head.next.next.next = new ListNode(4);
+head.next.next.next.next = new ListNode(5);
+
+ListNode.LinkedListProblems solution = new ListNode.LinkedListProblems();
+solution.ReverseList(head);
