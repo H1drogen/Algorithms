@@ -17,3 +17,20 @@ def canJump(nums: List[int]) -> bool:
     return check_jumps(nums, len(nums) - 2)
 
 print(canJump([2,3,1,1,4]))
+
+# we can use a greedy algorithm.
+# The idea is to keep track of the farthest position we can reach as we iterate through the array.
+# If at any point the current index is greater than the farthest position we can reach, we return False.
+# If we can reach or exceed the last index, we return True.
+
+def canJump(nums: List[int]) -> bool:
+    farthest = 0
+    for i in range(len(nums)):
+        if i > farthest:
+            return False
+        farthest = max(farthest, i + nums[i])
+    return True
+
+# Example usage:
+print(canJump([2, 3, 1, 1, 4]))  # Outputs: True
+print(canJump([3, 2, 1, 0, 4]))  # Outputs: False
