@@ -1,7 +1,5 @@
 import Interfaces.TreeNode;
-import leetcode.easy.maximum_depth_tree;
-
-import java.util.HashMap;
+import leetcode.easy.tree_questions;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
@@ -17,7 +15,7 @@ public class Main {
         root.right.right = new TreeNode(7);
 
         // Create an instance of maximum_depth_tree
-        maximum_depth_tree tree = new maximum_depth_tree();
+        tree_questions tree = new tree_questions();
 
         // Call the maxDepth method and print the result
         int depth = tree.maxDepth(root);
