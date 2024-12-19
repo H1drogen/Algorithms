@@ -9,6 +9,8 @@ def wordPattern(pattern: str, s: str) -> bool:
             if pattern[i] in hashmap.keys():
                 return False
             hashmap[pattern[i]] = words[i]
+        if pattern[i] not in hashmap.keys():
+            return False
         elif words[i] == hashmap[pattern[i]]:
             continue
         else:
