@@ -13,9 +13,6 @@ def traversal(root, data):
 
 
 
-
-
-
 root = binary_tree.Node(1)
 root.right = binary_tree.Node(2)
 root.right.right = binary_tree.Node(5)
