@@ -5,6 +5,8 @@ from typing import List
 # Return the smallest sorted list of ranges that cover all the numbers in the array exactly. That is, each element of nums is covered by exactly one of the ranges, and there is no integer x such that x is in one of the ranges but not in nums.
 
 def summaryRanges(nums: List[int]) -> List[str]:
+    if not nums:
+        return []
     ranges = []
     start = nums[0]
     for i in range(1, len(nums)):
