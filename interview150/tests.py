@@ -47,5 +47,11 @@ class TestSolutions(unittest.TestCase):
         expected = ["0"]
         assert summaryRanges(nums) == expected
 
+        # Test case 3: Empty list
+        nums = []
+        expected = []
+        assert summaryRanges(nums) == expected
+
+
 if __name__ == '__main__':
     unittest.main()
