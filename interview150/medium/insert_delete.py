@@ -8,6 +8,7 @@
 # You must implement the functions of the class such that each function works in average O(1) time complexity.
 
 class RandomizedSet:
+    import random
     def __init__(self):
         self.values = []
 
@@ -17,3 +18,11 @@ class RandomizedSet:
             return True
         return False
 
+    def remove(self, val: int) -> bool:
+        if val in self.values:
+            self.values.remove(val)
+            return True
+        return False
+
+    def getRandom(self) -> int:
+        return random.choice(self.values)
