@@ -7,3 +7,13 @@
 #
 # You must implement the functions of the class such that each function works in average O(1) time complexity.
 
+class RandomizedSet:
+    def __init__(self):
+        self.values = []
+
+    def insert(self, val: int) -> bool:
+        if val not in self.values:
+            self.values.append(val)
+            return True
+        return False
+
