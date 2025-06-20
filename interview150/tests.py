@@ -4,6 +4,7 @@ from interview150.easy.remove_duplicates_from_sorted_array import removeDuplicat
 from interview150.easy.remove_element import Solution as RemoveElementSolution
 from interview150.easy.summary_ranges import summaryRanges
 from interview150.medium.remove_duplicates_sorted_2 import removeDuplicates2
+from interview150.medium.insert_delete import RandomizedSet
 
 
 class TestSolutions(unittest.TestCase):
@@ -52,6 +53,14 @@ class TestSolutions(unittest.TestCase):
         expected = []
         assert summaryRanges(nums) == expected
 
+    def test_insertdelete(self):
+        dkd = RandomizedSet()
+        self.assertTrue(dkd.insert(1))
+        self.assertTrue(dkd.insert(2))
+        self.assertFalse(dkd.insert(1))
+        self.assertTrue(dkd.remove(1))
+        self.assertFalse(dkd.remove(3))
+        self.assertTrue(dkd.insert(2))
 
 if __name__ == '__main__':
     unittest.main()
