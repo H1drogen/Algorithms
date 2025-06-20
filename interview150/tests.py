@@ -54,13 +54,14 @@ class TestSolutions(unittest.TestCase):
         assert summaryRanges(nums) == expected
 
     def test_insertdelete(self):
-        dkd = RandomizedSet()
-        self.assertTrue(dkd.insert(1))
-        self.assertTrue(dkd.insert(2))
-        self.assertFalse(dkd.insert(1))
-        self.assertTrue(dkd.remove(1))
-        self.assertFalse(dkd.remove(3))
-        self.assertTrue(dkd.insert(2))
+        rdmset = RandomizedSet()
+        self.assertTrue(rdmset.insert(1))
+        self.assertTrue(rdmset.insert(2))
+        self.assertFalse(rdmset.insert(1))
+        self.assertTrue(rdmset.remove(1))
+        self.assertFalse(rdmset.remove(3))
+        assert rdmset.getRandom() == 1
+
 
 if __name__ == '__main__':
     unittest.main()

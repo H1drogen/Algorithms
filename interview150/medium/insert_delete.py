@@ -7,8 +7,9 @@
 #
 # You must implement the functions of the class such that each function works in average O(1) time complexity.
 
+import random
+
 class RandomizedSet:
-    import random
     def __init__(self):
         self.values = []
 
