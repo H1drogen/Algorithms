@@ -1,7 +1,7 @@
 # Algorithms
 
 ## Description
-This repository is a personal collection of solutions to Algorithms problems from multiple sources (predominently Leetcode), implemented in various languages. 
+This repository is a personal collection of solutions to Algorithms problems from multiple sources (predominantly Leetcode), implemented in various languages. 
 
 ## Languages Used
 - Python
