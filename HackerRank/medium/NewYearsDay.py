@@ -16,7 +16,15 @@ import sys
 #
 
 def minimumBribes(q):
-    # Write your code here
+    current_num = q[0]
+    for num in q:
+        bribe = 0
+        if num < current_num:
+            bribe += 1
+            if bribe > 2:
+                print('Too chaotic')
+        bribe =
+
 
 if __name__ == '__main__':
     t = int(input().strip())
