@@ -21,4 +21,6 @@ def gridChallengeAns(grid):
                 return 'NO'
     return 'YES'
 
+#TRICK: The first function is more efficient because it uses enumerate to iterate through the grid, which is faster than using a range and indexing. The second function uses a range and indexing, which is slower. Additionally, the first function uses a single loop to sort the rows, while the second function uses two loops to sort the rows and check the columns. This makes the first function more efficient overall.
+
 print(gridChallenge(['abc', 'Imp', 'qrt']))
