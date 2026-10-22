@@ -16,22 +16,33 @@ import sys
 #
 
 def minimumBribes(q):
-    current_num = q[0]
-    for num in q:
-        bribe = 0
-        if num < current_num:
-            bribe += 1
-            if bribe > 2:
-                print('Too chaotic')
-        bribe =
+    last_num = 0
+    bribe_count = 0
+    anchor = 0
+    bribe = 0
 
+    for num in q:
+        if anchor > num:
+            bribe += 1
+            bribe_count += 1
+            if bribe_count >= 2:
+                print('Too chaotic')
+                return
+            continue
+        if last_num > num:
+            bribe += 1
+            anchor = last_num
+            continue
+        last_num = num
+
+    print(bribe)
 
 if __name__ == '__main__':
-    t = int(input().strip())
+    test_cases = [
+        # [2, 1, 5, 3, 4], # three bribes, valid
+        # [2, 5, 1, 3, 4], # too chaotic
+        [1, 2, 5, 3, 4, 7, 8, 6], # four bribes
+    ]
 
-    for t_itr in range(t):
-        n = int(input().strip())
-
-        q = list(map(int, input().rstrip().split()))
-
+    for q in test_cases:
         minimumBribes(q)
