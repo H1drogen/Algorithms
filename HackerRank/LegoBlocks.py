@@ -1,3 +1,11 @@
+#You have an infinite number of 4 types of lego blocks of sizes given as (depth x height x width):
+
+#Using these blocks, you want to make a wall of height  and width . Features of the wall are: The wall should not have any holes in it, The wall you build should be one solid structure, so there should not be a straight vertical break across all rows of bricks, The bricks must be laid horizontally.
+
+# How many ways can the wall be built?
+
+
+
 
 def LegoBlocks(n, m):
     mod = 1000000007
@@ -17,5 +25,7 @@ def LegoBlocks(n, m):
 
     return dp[n]
 
+
+#TRICK:
 
 LegoBlocks(2, 2)

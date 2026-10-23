@@ -37,6 +37,8 @@ def minimumBribes(q):
 
     print(bribe)
 
+#TRICK: The key insight is to use the position in the array to determine how many bribes have occurred. If a person is more than two positions ahead of their original array number, it is too chaotic. Otherwise, we can count the number of bribes by checking how many people are ahead of them in the queue.
+
 if __name__ == '__main__':
     test_cases = [
         # [2, 1, 5, 3, 4], # three bribes, valid
