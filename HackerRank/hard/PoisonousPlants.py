@@ -37,4 +37,6 @@ def poisonousPlants(p):
 
     return max_days
 
+# TRICK: The trick is to process plants from left to right with a monotonic stack, tracking how many days each plant needs to die.
+
 print(poisonousPlants([6, 5, 8, 4, 7, 10, 9]))
