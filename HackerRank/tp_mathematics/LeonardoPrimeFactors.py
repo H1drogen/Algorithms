@@ -46,4 +46,5 @@ def primeCount(n):
 # TRICK: the smallest number with k distinct prime factors is the product of the k smallest primes: 2 × 3 × 5 × .... Using larger primes—or powers of primes—only makes the number bigger, so it can’t increase how many distinct prime factors fit within n.
 
 if __name__ == '__main__':
-    print(primeCount(30))  # Output: 2
+    print(primeCount(30))  # Output: 3
+    print(primeCount(100))  # Output: 4
