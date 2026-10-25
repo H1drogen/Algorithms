@@ -6,29 +6,44 @@ import random
 import re
 import sys
 
+# Easy
+
 # Leonardo loves primes and created q queries where each query takes the form of an integer, n. For each n, count the maximum number of distinct prime factors of any number in the inclusive range [1,n].
 
+# Example: for n = 10, the maximum number of distinct prime factors of any number in the range [1,10] is 2. The number 6 has two distinct prime factors: 2 and 3.
 
-# Complete the 'primeCount' function below.
-#
-# The function is expected to return an INTEGER.
-# The function accepts LONG_INTEGER n as parameter.
-#
+
 
 def primeCount(n):
     # Write your code here
+    prime_current = 2
+    prime_count = 2
+    result = 0
 
+    def find_next_prime(number):
+        while True:
+            number += 1
+            flag = True
+            for divisor in range(2,number):
+                if number % divisor == 0:
+                    flag = False
+                    break
+            if flag:
+                return number
+
+    if n < 2:
+        return 0
+
+    while n >= prime_count:
+        result += 1
+        prime_current = find_next_prime(prime_current)
+        prime_count = prime_count * prime_current
+
+    return result
+
+
+
+# TRICK: the smallest number with k distinct prime factors is the product of the k smallest primes: 2 × 3 × 5 × .... Using larger primes—or powers of primes—only makes the number bigger, so it can’t increase how many distinct prime factors fit within n.
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
-    q = int(input().strip())
-
-    for q_itr in range(q):
-        n = int(input().strip())
-
-        result = primeCount(n)
-
-        fptr.write(str(result) + '\n')
-
-    fptr.close()
+    print(primeCount(30))  # Output: 2
